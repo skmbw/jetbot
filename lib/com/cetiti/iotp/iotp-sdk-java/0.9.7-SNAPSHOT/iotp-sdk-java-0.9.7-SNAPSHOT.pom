@@ -1,0 +1,8 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Jul 09 13:27:26 CST 2019
+http\://maven.aliyun.com/nexus/content/repositories/snapshots/.lastUpdated=1562650042359
+a71a528a4719b9fd9ea24c53cdaa4630eb431ca1@default-cethik-geomesa-release-http\://maven.d.com/repository/cetiti-maven/.lastUpdated=1562649699729
+http\://maven.aliyun.com/nexus/content/groups/public/.error=
+http\://maven.aliyun.com/nexus/content/repositories/snapshots/.error=
+http\://maven.aliyun.com/nexus/content/groups/public/.lastUpdated=1562650046998
+http\://maven.d.com/repository/cetiti-maven/.error=Could not transfer artifact com.cetiti.iotp\:iotp-sdk-java\:pom\:0.9.7-SNAPSHOT from/to cethik-geomesa-release (http\://maven.d.com/repository/cetiti-maven/)\: Failed to transfer file\: http\://maven.d.com/repository/cetiti-maven/com/cetiti/iotp/iotp-sdk-java/0.9.7-SNAPSHOT/iotp-sdk-java-0.9.7-SNAPSHOT.pom. Return code is\: 400 , ReasonPhrase\:Repository version policy\: RELEASE does not allow version\: 0.9.7-SNAPSHOT.

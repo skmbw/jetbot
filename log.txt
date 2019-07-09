@@ -1,0 +1,14 @@
+2019-07-09 11:29:00,714 INFO  [com.cetiti.jetbot.JetbotTest] 获得串口数据serial data=[get ttl1]
+2019-07-09 12:35:44,523 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get ttl1] success.
+2019-07-09 12:36:45,053 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get ttl1] success.
+2019-07-09 12:37:45,768 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get ttl1] success.
+2019-07-09 13:34:58,867 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get ttl1] success.
+2019-07-09 13:34:58,877 INFO  [com.cetiti.jetbot.JetbotTest] 
+2019-07-09 13:37:28,669 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get ttl1] success.
+2019-07-09 13:37:28,682 INFO  [com.cetiti.jetbot.JetbotTest] report data failure.msg=[null].
+2019-07-09 13:38:34,632 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get ttl1] success.
+2019-07-09 13:38:34,645 INFO  [com.cetiti.jetbot.JetbotTest] report data failure. msg=[null], code=[0].
+2019-07-09 13:45:12,661 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get_ttl1] success.
+2019-07-09 13:45:12,677 INFO  [com.cetiti.jetbot.JetbotTest] report data failure. msg=[null], code=[0].
+2019-07-09 13:48:08,592 INFO  [com.cetiti.jetbot.JetbotTest] get serial data=[get_ttl1] success.
+2019-07-09 13:48:08,608 INFO  [com.cetiti.jetbot.JetbotTest] report data failure. msg=[null], code=[0].
