@@ -43,7 +43,7 @@ public class JetbotTest {
                             LOGGER.info("report data success code=1。");
                         } else {
                             String msg = responseInfo.getMsg();
-                            LOGGER.info("report data success. msg=[{}], code=[{}].", msg, responseInfo.getCode());
+                            LOGGER.info("report data success. code=[{}].", msg, responseInfo.getCode());
                         }
                     } else {
                         LOGGER.info("response is null.");
