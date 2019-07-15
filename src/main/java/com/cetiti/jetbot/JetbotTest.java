@@ -3,6 +3,7 @@ package com.cetiti.jetbot;
 import com.cetiti.iot.agent.http.service.HttpSmartThingService;
 import com.cetiti.iot.agent.model.ResponseInfo;
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,8 +29,12 @@ public class JetbotTest {
             // 暂时使用轮训
             for (;;) {
                 String ttl = getSerialData();
+                if (StringUtils.isBlank(ttl)) {
+                    continue;
+                }
+                String[] ts = StringUtils.split(ttl, "#");
                 LOGGER.info("get serial data=[{}] success.", ttl);
-                byte[] data = ("{'v': '" + ttl + "', 's': 1,'t': 30}").getBytes();
+                byte[] data = ("{'v': '" + ttl + "', 's': " + ts[1] + ",'t': " + ts[0] + "}").getBytes();
                 try {
                     ResponseInfo responseInfo = service.reportData("yinlei001", "yinlei1", data);
                     if (responseInfo != null) {
