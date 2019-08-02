@@ -23,7 +23,8 @@ import java.util.concurrent.TimeUnit;
 public class JetbotTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(JetbotTest.class);
 
-    static String[] ts = {"28.0#67.0", "28.1#67.0", "28.0#67.1", "28.1#67.1", "28.2#67.1", "28.3#67.1", "28.2#67.2", "28.3#67.3", "28.3#67.1", "28.2#67.2", "28.0#67.2", "28.1#67.2"};
+    private static Random random = new Random(10);
+    private static String[] ts = {"28.0#67.0", "28.1#67.0", "28.0#67.1", "28.1#67.1", "28.2#67.1", "28.3#67.1", "28.2#67.2", "28.3#67.3", "28.3#67.1", "28.2#67.2", "28.0#67.2", "28.1#67.2"};
 
     public static void main(String[] args) {
         try {
@@ -73,8 +74,9 @@ public class JetbotTest {
 //        } catch (Exception e) {
 //            LOGGER.error("get serial data error, msg=[{}].", e);
 //        }
-        Random random = new Random(10);
+
         int i = random.nextInt(12);
+        LOGGER.info("索引是=[{}].", i);
         result = ts[i];
         return result;
     }
