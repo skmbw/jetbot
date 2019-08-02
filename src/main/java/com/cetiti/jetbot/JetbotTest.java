@@ -13,6 +13,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -21,6 +22,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class JetbotTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(JetbotTest.class);
+
+    static String[] ts = {"28.0#67.0", "28.1#67.0", "28.0#67.1", "28.1#67.1", "28.2#67.1", "28.3#67.1", "28.2#67.2", "28.3#67.3", "28.3#67.1", "28.2#67.2", "28.0#67.2", "28.1#67.2"};
 
     public static void main(String[] args) {
         try {
@@ -61,15 +64,18 @@ public class JetbotTest {
 
     private static String getSerialData() {
         String result = "";
-        try {
-            String url = "http://10.70.10.112:8000/serial/ttl1";
-            byte[] bytes = invoke(url, null, "GET");
-            if (bytes != null) {
-                result = new String(bytes);
-            }
-        } catch (Exception e) {
-            LOGGER.error("get serial data error, msg=[{}].", e);
-        }
+//        try {
+//            String url = "http://10.70.10.112:8000/serial/ttl1";
+//            byte[] bytes = invoke(url, null, "GET");
+//            if (bytes != null) {
+//                result = new String(bytes);
+//            }
+//        } catch (Exception e) {
+//            LOGGER.error("get serial data error, msg=[{}].", e);
+//        }
+        Random random = new Random(10);
+        int i = random.nextInt(12);
+        result = ts[i];
         return result;
     }
 
